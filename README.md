@@ -68,7 +68,7 @@ pip install -r requirements.txt
 # Copy example file
 cp .env.example .env
 
-# Edit .env (add your keys)
+# Edit .env
 nano .env  # Or use Notepad/VS Code
 ```
 
