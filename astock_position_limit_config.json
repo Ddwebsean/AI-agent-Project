@@ -1,0 +1,29 @@
+{
+  "agent_type": "BaseAgentAStock",
+  "market": "cn",
+  "date_range": {
+    "init_date": "2025-10-01",
+    "end_date": "2025-12-31"
+  },
+  "models": [
+    {
+      "name": "DeepSeek-v3.1",
+      "basemodel": "deepseek-chat",
+      "signature": "deepseek-astock-position-limit",
+      "enabled": true
+    }
+  ],
+  "agent_config": {
+    "initial_cash": 100000.0,
+    "max_steps": 30,
+    "max_retries": 3,
+    "base_delay": 1.0
+  },
+  "log_config": {
+    "log_path": "./data/agent_data_astock_position_limit"
+  },
+  "data_config": {
+    "data_path": "./data/A_stock/merged.jsonl",
+    "market_index": "SSE-50"
+  }
+}
